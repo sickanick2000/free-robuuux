@@ -1,0 +1,28 @@
+body
+{
+
+}
+
+.heading
+{
+width: 100%;
+text-align: left;
+}
+
+#headii
+{
+    float: right;
+    border: 1px solid white;
+}
+
+.headp
+{
+    float: left;
+    border: 1px solid white;
+}
+
+.copy_right_footer
+{
+    background-color: grey;
+    width: 100%;
+}
