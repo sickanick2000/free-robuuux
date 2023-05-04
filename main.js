@@ -20,9 +20,25 @@ var ball = {
     dx:3,
     dy:3
 }
+video = "";
+
+
+function ModelLoaded()
+{
+console.log("model is loaded btw")
+}
 
 function setup(){
-  var canvas =  createCanvas(700,600);
+   canvas =  createCanvas(700,600);
+   canvas.parent("canvas");
+
+  video.parent("canvas");
+  video = createCapture(VIDEO);
+  video.size(700, 600);
+  video.hide();
+
+  poseNet = ml5.poseNet(video, ModelLoaded);
+    poseNet.on('pose', gotPoses);
 }
 
 

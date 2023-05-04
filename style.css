@@ -26,3 +26,19 @@ text-align: left;
     background-color: grey;
     width: 100%;
 }
+
+canvas
+{
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border:2px solid white;
+    border-radius:10px;
+    margin-top: 130px;
+    box-shadow: 5px 5px 5px green;
+}
+
+@keyframes example {
+    from {box-shadow: 15px 15px 30px red;}
+    to {box-shadow: 15px 15px 30px rgb(0, 255, 191);}
+}
